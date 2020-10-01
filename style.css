@@ -52,6 +52,10 @@
     color: #e0c3c3;
   }
 
+  code{
+    font-size: 12px
+  }
+
   q{
     background-color: #5c2a2a;
     color: #6db8c7;
