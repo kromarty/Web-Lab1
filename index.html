@@ -8,25 +8,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
  <header>
   <h1>Портфолио</h1>
   <h2>Попов Антон Андреевич, студент ИТМО, факультет ИТИП, 3 курс</h2>
   <nav>
-    <ul>
-      <li> <a href="https://vk.com/kr0marty">ВК</a> </li>
-      <li> <a href="https://instagram.com/kr0marty"> Instagram </a> </li>
-      <li> <a href="mailto:tonikrus@rambler.ru"> Почта </a> </li>
-    </ul>
+     <div class="contacts"><a href="https://vk.com/kr0marty"> <img src="vk-logo.png" alt="ВК" width="50"> </a> </div>
+     <div class="contacts"><a href="https://instagram.com/kr0marty"> <img src="instagram-logo.png" alt="Instagram" width="50"> </a> </div>
+     <div class="contacts"><a href="mailto:tonikrus@rambler.ru"> <img src="mail-logo.png" alt="Почта" width="50"> </a> </div>
   </nav>
  </header>
+
  <main>
+ <div class="raw">
  <section>
-   <h3>О себе</h3>
+   <h3 class="main-header">О себе</h3>
    <article>Родился в городе Саратов, расположенный на реке Волге. Люблю плавать, кататься на велосипеде, кататься на горных лыжах.
    Окончил Физико-технический лицей №1, поступил в ИТМО по БВИ. В целом немного знаю обо всём.</article>
  </section>
  <section>
-  <h3>Достижения</h3>
+  <h3 class="main-header">Достижения</h3>
   <ul>
     <li>Открытая олимпиада школьников "Информационные технологии": диплом 1 степени</li>
     <li>Первый юношеский разряд по плаванию</li>
@@ -39,15 +40,14 @@
    </ul>
  </section>
   <section>
-    <h4>Пара моих проектов с github:</h4>
+    <h3 class="main-header">Пара моих проектов с github:</h3>
     <ul>
       <li> <a href="https://github.com/kromarty/Bankiru_bot">Telegram-бот который выводит информацию о курсе валют с сайта banki.ru</a> </li>
       <li> <a href="https://github.com/kromarty/MafiaBot"> Discord-бот для игры в мафию, распределяющий роли между участниками голосового канала </a> </li>
     </ul>
   </section>
-
  <section>
-   <h3>Профессиональные навыки</h3>
+   <h3 class="main-header">Профессиональные навыки</h3>
    <p>Программирую на языках:
    </p>
      <ul>
@@ -56,7 +56,12 @@
        <li>Java</li>
        <li>Python</li>
      </ul>
-     <pre id="code">
+  </section>
+  </div>
+  <div class="raw">
+  <section>
+     <pre>
+    <h3 class="main-header">Пример кода</h3>
    <code>
      import discord
      from discord.ext import commands
@@ -158,14 +163,19 @@
    </code>
    </pre>
  </section>
+ </div>
  </main>
  <footer>
-   <img src="F.gif">
-    </pre>
-    <h3>Любимая цитата</h3>
-    <q>Если приходится выбирать между одним злом и другим, я предпочитаю не выбирать вовсе</q>
-    <h3>Формула успеха</h3>
-    <p>Success = occupation<sub>favorite</sub>*occupation<sub>you're best at</sub>*occupation<sub>well paid</sub></p>
+   <div class="footer-block">
+     <section>
+       <h3>Любимая цитата</h3>
+       <q>Если приходится выбирать между одним злом и другим, я предпочитаю не выбирать вовсе</q>
+     </section>
+     <section>
+     <h3>Формула успеха</h3>
+     <p>Success = occupation<sub>favorite</sub>*occupation<sub>you're best at</sub>*occupation<sub>well paid</sub></p>
+    </section>
+   </div>
  </footer>
 </body>
 </html>
