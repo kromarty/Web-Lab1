@@ -11,11 +11,39 @@
  <header>
   <h1>Портфолио</h1>
   <h2>Попов Антон Андреевич, студент ИТМО, факультет ИТИП, 3 курс</h2>
-  <nav>
-     <div class="contacts"><a href="https://vk.com/kr0marty"> <img src="vk-logo.png" alt="ВК" width="50"> </a> </div>
-     <div class="contacts"><a href="https://instagram.com/kr0marty"> <img src="instagram-logo.png" alt="Instagram" width="50"> </a> </div>
-     <div class="contacts"><a href="mailto:tonikrus@rambler.ru"> <img src="mail-logo.png" alt="Почта" width="50"> </a> </div>
-  </nav>
+  <img id="image" class="av" src="Gallery/main.jpg" onClick="imgsrc();">
+  <!--  <a href="#popup">Контакты</a>
+  <div id="popup" class="popup">
+    <a href="#" class="popup_area"></a>
+    <div class="popup_body">
+      <div class="popup_content">
+        <a href="#" class="popup_close">X</a>
+        <div class="popup_title">Контакты</div>
+        <div class="popup_text">
+          <ul>
+             <li class="contacts"><a href="https://vk.com/kr0marty"> <img src="vk-logo.png" alt="ВК" width="50"> </a> </li>
+             <li class="contacts"><a href="https://instagram.com/kr0marty"> <img src="instagram-logo.png" alt="Instagram" width="50"> </a> </li>
+             <li class="contacts"><a href="mailto:tonikrus@rambler.ru"> <img src="mail-logo.png" alt="Почта" width="50"> </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div>
+      <button id="ShowPopUp">Контакты</button>
+    </div>
+      <div class="b-popup-container" id="popup-container">
+          <div class="b-popup" id="popup1">
+              <div class="content">
+                 <a class="contacts" href="https://vk.com/kr0marty"> <img src="vk-logo.png" alt="ВК" width="50"> </a>
+                 <a class="contacts" href="https://instagram.com/kr0marty"> <img src="instagram-logo.png" alt="Instagram" width="50"> </a>
+                 <a class="contacts" href="mailto:tonikrus@rambler.ru"> <img src="mail-logo.png" alt="Почта" width="50"> </a>
+                  <button class="close" id="PopUpHide">
+                    Х
+                  </button>
+              </div>
+          </div>
+      </div>
  </header>
 
  <main>
@@ -178,4 +206,26 @@
  </footer>
 </body>
 <script src="script.js"></script>>
+<script>
+  document.getElementById("ShowPopUp").onclick = function (){
+    document.getElementById("popup-container").style.visibility = "visible";
+  }
+  document.getElementById("PopUpHide").onclick = function (){
+    document.getElementById("popup-container").style.visibility = "hidden";
+  }
+</script>
+<script>
+var i=0;
+var image=document.getElementById("image");
+var imgs=new Array('Gallery/main.jpg', 'Gallery/Driving.jpg', 'Gallery/summer.jpg');
+var j=imgs.length;
+function imgsrc() {
+  if (i!=(j - 1))
+    {i++;}
+    else {
+      i=0;
+    }
+  image.src=imgs[i];
+  }
+</script>
 </html>
